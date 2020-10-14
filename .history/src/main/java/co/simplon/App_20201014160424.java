@@ -8,15 +8,11 @@ public final class App {
     }
 
 
-    static void alimenterEnVoiture(Agence agence){
+    static void alimenterEnVoiture(){
         
         Voiture renault = new Voiture("Renault","rouge");
         System.out.println(renault.getChaine());
-        Voiture ferrari = new Voiture("Ferrari","rouge");
-        agence.ajouterVoiture(renault);
-        agence.ajouterVoiture(ferrari);
         
-
     }
 
 
@@ -27,10 +23,14 @@ public final class App {
      */
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        alimenterEnVoiture();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello Wold!");
         Agence agenceRennes = new Agence("Rennes");
         System.out.println(agenceRennes.getChaine());
-        alimenterEnVoiture(agenceRennes);
-        agenceRennes.afficherStock();
+        alimenterEnVoiture();
     }
 }
 

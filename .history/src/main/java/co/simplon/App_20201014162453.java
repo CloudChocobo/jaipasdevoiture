@@ -1,5 +1,5 @@
 package co.simplon;
-
+import java.util.ArrayList;
 /**
  * Hello world!
  */
@@ -15,7 +15,6 @@ public final class App {
         Voiture ferrari = new Voiture("Ferrari","rouge");
         agence.ajouterVoiture(renault);
         agence.ajouterVoiture(ferrari);
-        
 
     }
 
@@ -30,7 +29,9 @@ public final class App {
         Agence agenceRennes = new Agence("Rennes");
         System.out.println(agenceRennes.getChaine());
         alimenterEnVoiture(agenceRennes);
-        agenceRennes.afficherStock();
+        afficherStock(agenceRennes);
     }
+
+
 }
 

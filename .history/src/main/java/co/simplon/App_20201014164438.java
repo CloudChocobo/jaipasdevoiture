@@ -1,5 +1,7 @@
 package co.simplon;
 
+import java.util.ArrayList;
+
 /**
  * Hello world!
  */
@@ -32,5 +34,7 @@ public final class App {
         alimenterEnVoiture(agenceRennes);
         agenceRennes.afficherStock();
     }
+
+
 }
 
